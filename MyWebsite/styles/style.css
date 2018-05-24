@@ -1,0 +1,268 @@
+/* reset style */
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+/* start of landing page */
+.landingPage{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: orange;
+  display: table;
+  top:0;
+  background-size: cover;
+}
+
+.landingPage .switchButton{
+  display: table-cell;
+  vertical-align:top;
+  /* padding-left: 25px;
+  padding-top: 25px; */
+  //moves everything on page //
+
+}
+.swicthButtonDiv{
+  padding: 10px;
+  position: fixed;
+  z-index: 2;
+
+}
+
+
+.switchButton {
+
+  background: #1fdb22;
+  background-image: -webkit-linear-gradient(top, #1fdb22, #db1fd8);
+  background-image: -moz-linear-gradient(top, #1fdb22, #db1fd8);
+  background-image: -ms-linear-gradient(top, #1fdb22, #db1fd8);
+  background-image: -o-linear-gradient(top, #1fdb22, #db1fd8);
+  background-image: linear-gradient(to bottom, #1fdb22, #db1fd8);
+  -webkit-border-radius: 33;
+  -moz-border-radius: 33;
+  border-radius: 33px;
+  padding: 10px 10px 10px 10px;
+  border: solid #4d4494 3px;
+  text-decoration: none;
+}
+
+.switchButton:hover {
+  background: #ff24ff;
+  background-image: -webkit-linear-gradient(top, #ff24ff, #2bff2f);
+  background-image: -moz-linear-gradient(top, #ff24ff, #2bff2f);
+  background-image: -ms-linear-gradient(top, #ff24ff, #2bff2f);
+  background-image: -o-linear-gradient(top, #ff24ff, #2bff2f);
+  background-image: linear-gradient(to bottom, #ff24ff, #2bff2f);
+  /* -webkit-border-radius: 33;
+  -moz-border-radius: 33; */
+  /* border-radius: 33px;
+  padding: 10px 10px 10px 10px;
+  border: solid #ffffff 2.5px; */
+  text-decoration: none;
+
+}
+
+ .logoMask{
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+  align-content: center;
+  z-index: 1;
+
+}
+
+
+ .triangleFont{
+   padding-left: 18%;
+   z-index: 1;
+  font-size: 300px;
+  position: fixed;
+  align-content:center;
+
+}
+/* svg{
+  display: block;
+  width: 100%;
+  height: auto;
+  align-items: center;
+} */
+
+/* ///START of your plcement/styling of glitch pictures/// */
+
+.glitchPictureContent{
+  z-index: -1;
+}
+
+.glitchPictureContent{
+  display: flex;
+  /* removing display flex this stops the horrible white space @bottom  */
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.glitchPictureContent > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.glitchPictureContent > div {
+  flex: 1 1 300px;
+
+}
+/* .glitchPictureContent > .big {
+  flex: 1 1 500px;
+  to make a more diverse grid - need to make classes and select work */
+
+/* ///END of your plcement/styling of glitch pictures/// */
+
+/* End of landing page */
+
+/* Start mainPage */
+.mainPage{
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+
+/* ///This is your 6 displaybox/// */
+@media (min-width:400px){
+.container{
+  display:flex;
+  display:flex-wrap:wrap;
+  align-items:center;
+/*   flex-basis: 20%; */
+   max-width:600px;
+  justify-content:center;
+  flex-direction:row;
+
+
+}
+  @media (min-width:400px){
+.container2{
+  display:flex;
+  display:flex-wrap:wrap;
+  align-items:center;
+/*   flex-basis: 20%; */
+   max-width:600px;
+  justify-content:center;
+  flex-direction:row;
+
+}
+.container div{
+  border: 2px solid red;
+  padding:10px;
+  height:100px
+
+}
+.container2 div{
+  border: 2px solid red;
+  padding:10px;
+  height:100px;
+}
+
+.container > div:nth-child(1){
+/* .box1{ */
+  flex:3;
+  order:1;
+  background-color:#CE6C0F;
+
+}
+.container > div:nth-child(2){
+/* .box2{ */
+  flex:3;
+  order:2;
+  background-color:#BACE0F;
+}
+.container > div:nth-child(3){
+/*   .box3{ */
+  flex:3;
+  order:3;
+/*   width:30%; */
+  background-color:#15CE0F;
+}
+.container2 > div:nth-child(1){
+  /*   .box4{ */
+  flex:3;
+  order:4;
+  background-color:#0FCEBC;
+
+}
+.container2 > div:nth-child(2){
+  /*   .box5{ */
+  flex:3;
+  order:5;
+  background-color:#0F1BCE;
+
+}
+.container2 > div:nth-child(3){
+  /*   .box6{ */
+  flex:3;
+  order:6;
+  background-color:#9A0FCE;
+}
+/* ///This is your END of 6 displaybox/// */
+
+/* ////This is your START navBar//// */
+/*TASK !!!!you need to make this auto hight on all devices!!! */
+.navigationBar{
+  display:flex;
+  height:575px;
+  width:50px;
+  background-color:green;
+  border: 1px solid red;
+  padding:0px;
+  align-items:flex-end;
+
+}
+
+.navBar {
+  /*   display:flex;
+  align-items:flex-end; */
+  flex-direction:column;
+  width:100%;
+  border: 1px solid red;
+  /*   justify-content:space-around; */
+
+}
+
+.navBar > div{
+ display:flex;
+ align-items:flex-end;
+
+}
+
+.facebook{
+  flex:auto;
+  order:1;
+  width:auto;
+  height:30px;
+  border: 1px solid red;
+  background-color:orange;
+}
+
+.instagram{
+  flex:auto;
+  order:2;
+  width:auto;
+  height:30px;
+  border: 1px solid red;
+  background-color:yellow;
+}
+
+.linkedIn{
+  flex:auto;
+  order:3;
+  width:auto;
+  height:30px;
+  border: 1px solid red;
+  background-color:white;
+}
+/* ////This is your END navBar//// */
